@@ -28,8 +28,11 @@ $(function() {
 
 $('img').click(function(){
 
-        video = '<iframe width="710" height="400" src="http://www.youtube.com/embed/'+$(this).attr("data-vidid")+'?autoplay=1"></iframe>';
-        $(this).replaceWith(video);
+		if($(this).attr("data-vidid") != "")
+		{
+			video = '<iframe width="710" height="400" src="http://www.youtube.com/embed/'+$(this).attr("data-vidid")+'?autoplay=1"></iframe>';
+			$(this).replaceWith(video);
+		}
 	
     });
 	
