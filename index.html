@@ -23,6 +23,10 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	
+	<style>
+	overflow: hidden;
+	</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -317,15 +321,15 @@
     </div>
 
 	<!-- Links -->
-	<div id="links">
+	<div id="inks">
     <a href="img/portfolio/FYP.jpg" title="nutt">
         <img src="img/portfolio/FYP.jpg" alt="nutt">
     </a>
-    <a href="img/portfolio/FYP.jpg" title="nutt">
-        <img src="img/portfolio/FYP.jpg" alt="nutt">
+    <a href="img/portfolio/BirdLife.jpg" title="nutt">
+        <img src="img/portfolio/BirdLife.jpg" alt="nutt">
     </a>
-    <a href="img/portfolio/FYP.jpg" title="nutt">
-        <img src="img/portfolio/FYP.jpg" alt="nutt">
+    <a href="img/portfolio/CactusCare.jpg" title="nutt">
+        <img src="img/portfolio/CactusCare.jpg" alt="nutt">
     </a>
 </div>
 	
@@ -513,7 +517,7 @@
                             <hr class="star-primary">
                             <!-- <img src="img/portfolio/FM.png" class="img-responsive img-centered" alt="" data-vidid=""> -->
 							<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
-							<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+							<div id="blueimp" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
 							<div class="slides"></div>
 							<h3 class="title"></h3>
 							<a class="prev">‹</a>
@@ -533,6 +537,19 @@
         </div>
     </div>
     
+	<!-- BlueImp -->
+	<script src="js/blueimp-gallery.min.js"></script>
+	
+	<script>
+blueimp.Gallery(
+    document.getElementById('inks').getElementsByTagName('a'),
+    {
+        container: '#blueimp',
+        carousel: true
+    }
+);
+</script>
+	
 	
 	<!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -552,18 +569,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 	
-	<!-- BlueImp -->
-	<script src="js/blueimp-gallery.min.js"></script>
 	
-	<script>
-blueimp.Gallery(
-    document.getElementById('links').getElementsByTagName('a'),
-    {
-        container: '#blueimp-gallery-carousel',
-        carousel: true
-    }
-);
-</script>
 	
 	
 	
