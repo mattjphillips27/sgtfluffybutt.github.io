@@ -26,22 +26,7 @@ $(function() {
     });
 });
 
-$('img').click(function(){
 
-		if($(this).attr("data-vidid") != "")
-		{
-			video = '<iframe width="710" height="400" src="http://www.youtube.com/embed/'+$(this).attr("data-vidid")+'?autoplay=1"></iframe>';
-			$(this).replaceWith(video);
-		}
-	
-    });
-	
-	
- /* $(document).on('click','#video',function(e){
-    //$('#homevideo').hide();
-    $('#ytvideo').html('<iframe width="710" height="400" id="ytvideo" frameborder="0" allowfullscreen src="http://www.youtube.com/embed/'+$(this).attr("data-vidid")+'?autoplay=1"></iframe>').show();
-	 
- }); */
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({

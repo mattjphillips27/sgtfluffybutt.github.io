@@ -21,12 +21,6 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-	
-	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	
-	<style>
-	overflow: hidden;
-	</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,6 +28,33 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	<style>
+		.post p.full {
+			float: left;
+			display:block;
+			clear:both;
+			width:100%;
+		}
+		
+		.post p.left {
+			float: left;
+			display: inline;
+		}
+		
+		.post .btn {
+			display: block;
+			clear: both;
+			margin: 0 auto;
+		}
+		
+		.portfolio-modal .modal-content img {
+			float: right;
+			display: inline;
+			width: 75%;
+		}
+		
+	</style>
 
 </head>
 
@@ -320,19 +341,6 @@
         </a>
     </div>
 
-	<!-- Links -->
-	<div id="inks">
-    <a href="img/portfolio/FYP.jpg" title="nutt">
-        <img src="img/portfolio/FYP.jpg" alt="nutt">
-    </a>
-    <a href="img/portfolio/BirdLife.jpg" title="nutt">
-        <img src="img/portfolio/BirdLife.jpg" alt="nutt">
-    </a>
-    <a href="img/portfolio/CactusCare.jpg" title="nutt">
-        <img src="img/portfolio/CactusCare.jpg" alt="nutt">
-    </a>
-</div>
-	
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="FYP" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -512,44 +520,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                        <div class="modal-body post">
                             <h2>Football Manager</h2>
                             <hr class="star-primary">
-                            <!-- <img src="img/portfolio/FM.png" class="img-responsive img-centered" alt="" data-vidid=""> -->
-							<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
-							<div id="blueimp" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
-							<div class="slides"></div>
-							<h3 class="title"></h3>
-							<a class="prev">‹</a>
-							<a class="next">›</a>
-							<a class="play-pause"></a>
-							<ol class="indicator"></ol>
-							</div>
-                            <p></p>
-							<p>Created in Unreal Engine 4.</p>
-                            <ul class="list-inline item-details">
-                            </ul>
+                            <img src="img/portfolio/FM.png" class="img-responsive img-right" alt="">
+							<p class="left">u a butt</p>
+                        </div>
+						<div class="modal-body post">
+                            <img src="img/portfolio/FM.png" class="img-responsive img-right" alt="">
+							<p class="left">u a butt</p>
+                        </div>
+						
+						
+						<div class="modal-body post">
+							<p class="full" >Created in Unreal Engine 4.</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-	<!-- BlueImp -->
-	<script src="js/blueimp-gallery.min.js"></script>
-	
-	<script>
-blueimp.Gallery(
-    document.getElementById('inks').getElementsByTagName('a'),
-    {
-        container: '#blueimp',
-        carousel: true
-    }
-);
-</script>
-	
 	
 	<!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -568,11 +561,6 @@ blueimp.Gallery(
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
-	
-	
-	
-	
-	
 
 </body>
 
