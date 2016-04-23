@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
     <title>Matthew Phillips - Game Design and Programmer</title>
 
@@ -28,32 +30,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	
 	<style>
-		.post p.full {
-			float: left;
-			display:block;
-			clear:both;
-			width:100%;
+	.inlay{
+	position:absolute;
+	top:0px;
+	
 		}
-		
-		.post p.left {
-			float: left;
-			display: inline;
-		}
-		
-		.post .btn {
-			display: block;
-			clear: both;
-			margin: 0 auto;
-		}
-		
-		.portfolio-modal .modal-content img {
-			float: right;
-			display: inline;
-			width: 75%;
-		}
-		
 	</style>
 
 </head>
@@ -101,7 +84,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/me.png" alt="" alt="" data-vidid="">
+                    <img class="img-responsive" src="img/me.png" alt="" style="width: 20%; height: 20%" alt="" data-vidid="">
                     <div class="intro-text">
                         <span class="name">Matthew Phillips</span>
                         <hr class="star-light">
@@ -199,6 +182,7 @@
                     </a>
                 </div>
 				<div class="col-sm-4 portfolio-item">
+					
                     <a href="#FM" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -206,6 +190,7 @@
                             </div>
                         </div>
                         <img src="img/portfolio/FM.png" class="img-responsive" alt="">
+						<img class="inlay" src="img/new.png" class="img-responsive" alt="">
 						<p>Football Manager</p>
                     </a>
                 </div>
@@ -419,8 +404,9 @@
 							<p>Paint the beach white as you have 60 seconds to get the best score.</p>
 							<p>Created in Unreal Engine 4.</p>
                             <ul class="list-inline item-details">
-                                <li>Link:
+                                <li>Links:
                                     <strong><a href="https://www.facebook.com/Bird-life-1695178144052509/?fref=ts">Facebook Page</a>
+									<a href="https://www.youtube.com/watch?v=MVjI9yqqULs">Release Video</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -520,23 +506,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body post">
+                        <div class="modal-body">
                             <h2>Football Manager</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/FM.png" class="img-responsive img-right" alt="">
-							<p class="left">This is football</p>
-                        </div>
-						<div class="modal-body post">
-                            <img src="img/portfolio/FM.png" class="img-responsive img-right" alt="">
-							<p class="left"></p>
-                        </div>
-						
-						
-						<div class="modal-body post">
-							<p class="full" >Created in Unreal Engine 4.</p>
+                            <img src="img/portfolio/FM.png" class="img-responsive img-centered" alt="" data-vidid="">
+                            <p>Take control of a team and become the best in the league.</p>
+							
+							<p>Features:</p>
+							<p>Buy players and selling players.</p>
+							<p>Team Selection.</p>
+							<p>Formations.</p>
+							
+							
+							
+							<p>Created in Unreal Engine 4.</p>
+                            <ul class="list-inline item-details">
+                            </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
-
                     </div>
                 </div>
             </div>
